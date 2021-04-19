@@ -23,7 +23,7 @@ const Book = (props) => {
                 <Nav.Link as={Link} to="/review"><FontAwesomeIcon icon={faEnvelope} /> Rivew</Nav.Link>
             </div>
             <div class="main">
-                
+                <h2>This is book</h2>
             </div>
         </div>
     );
