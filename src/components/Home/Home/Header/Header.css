@@ -1,0 +1,35 @@
+.navbar a{
+    font-weight:600;
+}
+.header-style{
+    background-image: linear-gradient(#1000ff5c, #00ff895c), url('../../../../images/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center;
+}
+.brand-name{
+    color: aqua;
+    font-weight: 700;
+    font-family: cursive;
+}
+.header-caption {
+    position: absolute;
+    top: 35%;
+}
+.header-caption h1{
+    font-size: 60px;
+    line-height: 80px;
+    color: #FFF;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+.header-caption h5{
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 10px;
+    color: #e9c46a;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}

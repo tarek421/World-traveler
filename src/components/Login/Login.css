@@ -1,0 +1,13 @@
+.login-container{
+    height: 100vh;
+    background: url(../../images/login-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.google-style{
+    border: 1px solid #333;
+    width: 300px;
+    padding: 2px;
+    border-radius: 20px;
+}
