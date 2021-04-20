@@ -36,9 +36,11 @@ function App() {
             <Route path="/admin">
               <Admin />
             </Route>
-            <Route path="/destinationBook/:destination">
+
+            <Route path="/destinationBook/:destinationId">
               <DestinationBook />
             </Route>
+
             <Route path="/login">
               <Login />
             </Route>
@@ -54,6 +56,8 @@ function App() {
             <Route path="/manageServices">
               <ManageServices />
             </Route>
+
+
 
             <Route path="/book">
               <Book />

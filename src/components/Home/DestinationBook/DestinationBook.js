@@ -1,13 +1,25 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Book from './Book';
 import './DestinationBook.css';
 import { faCartPlus, faEnvelope, faHome, faListAlt } from '@fortawesome/free-solid-svg-icons';
+import { useEffect } from 'react';
+import { useState } from 'react';
 
-const DestinationBook = (props) => {
-    
+const DestinationBook = () => {
+    let { destinationId } = useParams();
+
+    const [booking, setBooking] = useState({});
+    const { _id, destinationName, description, imageURL } = booking;
+    console.log( _id, destinationName, description, imageURL )
+    useEffect(() => {
+        fetch('https://nameless-headland-26950.herokuapp.com/services/'+destinationId)
+        .then(res => res.json())
+        .then(data => setBooking(data))
+    },[destinationId])
+
     return (
         <div>
             <div class="sidenav">

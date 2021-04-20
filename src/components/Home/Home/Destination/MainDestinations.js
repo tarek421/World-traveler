@@ -5,7 +5,7 @@ import './Destination.css';
 const MainDestinations = () => {
     const [destinationData, setDestinationData] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://nameless-headland-26950.herokuapp.com/services')
             .then(response => response.json())
             .then(data => setDestinationData(data))
     }, [])

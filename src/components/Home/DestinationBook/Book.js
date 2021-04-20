@@ -4,16 +4,11 @@ import { Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './DestinationBook.css';
 import { faCartPlus, faEnvelope, faHome, faListAlt } from '@fortawesome/free-solid-svg-icons';
-import { useHistory } from 'react-router';
 
 const Book = (props) => {
-    console.log(props._id)
+    // console.log(props._id)
     // const { imageURL, authorName, _id } = props.book;
 
-    const history = useHistory()
-    const handleBuyNow = (_id) => {
-        history.push(`/book/${_id}`);
-    }
     return (
         <div>
             <div class="sidenav">

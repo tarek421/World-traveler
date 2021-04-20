@@ -18,7 +18,7 @@ const AddServices = () => {
             description: data.description,
             imageURL: imageURL
         }
-        const url = `http://localhost:5000/addServices`;
+        const url = `https://nameless-headland-26950.herokuapp.com/addServices`;
         console.log(eventData)
 
         fetch(url, {
