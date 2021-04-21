@@ -4,6 +4,7 @@ import React from 'react';
 import { Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import OrderList from './OrderList';
+import './Admin.css';
 
 const Admin = () => {
     return (
@@ -15,8 +16,8 @@ const Admin = () => {
                 <Nav.Link as={Link} to="/makeAdmin"><FontAwesomeIcon icon={faUser} /> Make Admin</Nav.Link>
                 <Nav.Link as={Link} to="/manageServices"><FontAwesomeIcon icon={faTasks} /> Manage Services</Nav.Link>
             </div>
-            <div class="main">
-                <OrderList/>
+            <div  style={{marginLeft:'0'}} class="main">
+                <OrderList></OrderList>
             </div>
         </div>
     );

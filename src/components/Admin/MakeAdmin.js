@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import OrderList from './OrderList';
 const MakeAdmin = () => {
     return (
         <div>
@@ -15,7 +14,7 @@ const MakeAdmin = () => {
                 <Nav.Link as={Link} to="/manageServices"><FontAwesomeIcon icon={faTasks} /> Manage Services</Nav.Link>
             </div>
             <div class="main">
-                <OrderList/>
+                
             </div>
         </div>
     );

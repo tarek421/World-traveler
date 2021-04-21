@@ -30,3 +30,13 @@
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+  
+input {
+    width: 80%;
+    padding: 4px;
+    border: 1px solid #ddd;
+    color: #625c5c;
+    font-weight: 400;
+    border-radius: 10px;
+    margin: 10px;
+}
