@@ -8,7 +8,6 @@
     position: relative;
     background-color: rgba(36, 133, 176, 0.7);
     border-radius: 5px;
-    padding: 50px 0px;
 }
 .testimonial-carousel {
     position: relative;
@@ -30,7 +29,7 @@
 }
 .carousel-caption h2{
     color: #FFF;
-    margin: 20px 0px;
+    margin-bottom: 10px 0px;
 }
 .carousel-caption p{
     color: #FFF;
@@ -55,10 +54,9 @@
 }
 .carousel-caption img {
     width: 8rem;
+    border-radius: 50%;
     height: 8rem;
     border: 5px solid #fff;
-    border-radius: 50%;
-    margin-top: 2rem
 }
 
 @media(max-width:767px) {

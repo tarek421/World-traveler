@@ -1,16 +1,15 @@
 import React from 'react';
 
-const Rivew = ({ rivew }) => {
-    const { title, description, img, client } = rivew;
+const Rivew = ({ testimonial }) => {
+    console.log(testimonial)
+    const { name, rivewTitle,rivewDatail, imageURL } = testimonial;
     return (
-        <div>
-            <div className="carousel-item active">
-                <div className="carousel-caption">
-                    <h2>{title}</h2>
-                    <p class="customer-opinion">{description}</p>
-                    <img src={img} alt="" />
-                    <div id="image-caption">{client}</div>
-                </div>
+        <div className="carousel-item">
+            <div className="carousel-caption">
+                <h2>"{rivewTitle}"</h2>
+                <p>"{rivewDatail}"</p>
+                <img src={imageURL} alt="" />
+                <div id="image-caption">{name}</div>
             </div>
         </div>
     );

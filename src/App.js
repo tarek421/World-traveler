@@ -19,7 +19,7 @@ import MakeAdmin from './components/Admin/MakeAdmin';
 import ManageServices from './components/Admin/ManageServices';
 import Book from './components/Home/DestinationBook/Book';
 import BookingList from './components/Home/DestinationBook/BookingList';
-import Review from './components/Home/DestinationBook/Review';
+import AddReview from './components/Home/DestinationBook/AddReview';
 
 export const userContext = createContext();
 
@@ -66,7 +66,7 @@ function App() {
               <BookingList />
             </Route>
             <Route path="/review">
-              <Review />
+              <AddReview />
             </Route>
 
             <Route exact path="/">
