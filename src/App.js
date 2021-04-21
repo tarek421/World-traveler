@@ -2,7 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/Home/Home/Home';
 import Admin from './components/Admin/Admin';
-// import PrivetRoute from './components/Login/PrivetRoute/PrivetRoute';
+import PrivetRoute from './components/Login/PrivetRoute/PrivetRoute';
 import NoMatch from './components/NoMatch/NoMatch';
 import {
   BrowserRouter as Router,
@@ -33,13 +33,13 @@ function App() {
             <Route path="/home">
               <Home />
             </Route>
-            <Route path="/admin">
+            <PrivetRoute path="/admin">
               <Admin />
-            </Route>
+            </PrivetRoute>
 
-            <Route path="/destinationBook/:destinationId">
+            <PrivetRoute path="/destinationBook/:destinationId">
               <DestinationBook />
-            </Route>
+            </PrivetRoute>
 
             <Route path="/login">
               <Login />
