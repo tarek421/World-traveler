@@ -12,7 +12,7 @@ const OrderForm = ({ destinationName }) => {
             email: data.email,
             destinationName: data.destinationName,
         }
-        const url = `http://localhost:5000/addOrder`;
+        const url = `https://nameless-headland-26950.herokuapp.com/addOrder`;
         console.log(eventData)
 
         fetch(url, {
@@ -34,7 +34,7 @@ const OrderForm = ({ destinationName }) => {
 
                     <input defaultValue={destinationName} {...register("destinationName")}/>
 
-                    <input className='s-btn' type="submit" />
+                    <input onClick='alert("Hello! I am an alert box!!")' className='s-btn' type="submit" />
                 </div>
 
             </form>

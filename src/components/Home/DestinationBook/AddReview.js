@@ -19,7 +19,7 @@ const AddReview = () => {
             name: data.name,
             imageURL: imageURL
         }
-        const url = `http://localhost:5000/Addrivew`;
+        const url = `https://nameless-headland-26950.herokuapp.com/Addrivew`;
         console.log(eventData)
 
         fetch(url, {
